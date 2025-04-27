@@ -11,38 +11,42 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      /* background: url('./ancient-antique-art-backdrop.jpg') no-repeat center center/cover; */
       background: url('./553966.jpg') no-repeat center center/cover;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: 'MedievalSharp', cursive;
       background-color: #f5e6ca;
+      text-align: center;
     }
 
     .container {
-      text-align: center;
-      /* background: url('./brown-paper-background-oumqfeh17dwkani1.jpg');
-      padding: 50px 70px;
-      border: 2px solid #8b5a2b;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-      max-width: 600px; */
+      padding: 5vw;
     }
 
     h1 {
-      font-size: 85px;
+      font-size: 10vw; /* responsive size */
       color: #5b3921;
       margin: 0;
       text-shadow: 2px 2px 5px #a67c52;
     }
 
     p {
-      font-size: 40px;
+      font-size: 5vw; /* responsive size */
       color: #5b3921;
-      margin-top: 20px;
+      margin-top: 5vw;
       font-style: italic;
       text-shadow: 1px 1px 3px #a67c52;
+    }
+
+    /* Extra tweaks for very small screens */
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 14vw;
+      }
+      p {
+        font-size: 6vw;
+      }
     }
   </style>
 </head>
