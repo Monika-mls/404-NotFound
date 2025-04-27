@@ -21,31 +21,40 @@
     }
 
     .container {
-      padding: 5vw;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 10vw; /* responsive size */
+      font-size: 85px; /* keeping your original font size */
       color: #5b3921;
       margin: 0;
       text-shadow: 2px 2px 5px #a67c52;
     }
 
     p {
-      font-size: 5vw; /* responsive size */
+      font-size: 40px; /* keeping your original font size */
       color: #5b3921;
-      margin-top: 5vw;
+      margin-top: 20px;
       font-style: italic;
       text-shadow: 1px 1px 3px #a67c52;
     }
 
-    /* Extra tweaks for very small screens */
-    @media (max-width: 500px) {
+    /* Make it responsive on smaller devices */
+    @media (max-width: 768px) {
       h1 {
-        font-size: 14vw;
+        font-size: 60px;
       }
       p {
-        font-size: 6vw;
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        font-size: 22px;
       }
     }
   </style>
